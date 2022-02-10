@@ -2,7 +2,6 @@
 a simulation of a bitcoin attack
 
 ## Abstract
-Information security has become ubiquitous in this era. in this project we try to demonstrate a simple example of detection of malware based on its observed behaviour in the memory.
 crypto currency is of vital importance these days. It provides privacy, security, confidentiality, and decentralized transactions. In this project we demonstrate a basic example of the bit coin using the python programming language with the simulation of an attacker trying to forge the transcation history.
 
 ## Keeping track of branches
