@@ -11,9 +11,11 @@ from hashlib import sha256
 # names of the users
 names = ["Kiko", "Kimo", "Abdo", "Omar", "Amr", "Kiro", "Alice", "Bob"]
 
+# produces random transaction
 def generate_transaction(sender, reciever, money_amount, serial_num):
     return "{} pays {} {} bitcoins #{}".format(sender, reciever, money_amount, serial_num)
 
+# produces random list of transactions
 def generate_transactions_list(trans_num=3):
     transactions = list()
     for t in range(trans_num):
@@ -24,6 +26,7 @@ def generate_transactions_list(trans_num=3):
         transactions.append(transaction)
     return transactions
 
+# produces a hash of the block with the specified N zeros
 def verify_block(transactions, N):
     nonce = 0
     dig = ""
@@ -41,7 +44,7 @@ def verify_block(transactions, N):
             nonce += 1
     return dig
 
-# 100,000 - 1000
+# calculates the hacker success rate
 def test_hacker():
     seed(datetime.now())
     tests_num = int(input("enter number of tests "))
@@ -55,6 +58,7 @@ def test_hacker():
 
     print("sucess rate = {}".format(sucess_num/test_num))
 
+# chains 2 blocks togther
 def grow_chain(pointer, trans_num, N):
     new_trans = ", ".join(generate_transactions_list(trans_num))
     print(new_trans)
@@ -64,6 +68,7 @@ def grow_chain(pointer, trans_num, N):
     all_blocks[current_hash] = block
     return current_hash
 
+# the class defining the block
 class Block:
     def __init__(self, prev_hash, transactions, current_hash):
         self.prev_hash = prev_hash
