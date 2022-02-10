@@ -48,7 +48,7 @@ which are preinstalled when python3 is downloaded.
  ![55 percent 2](https://github.com/KareimGazer/Blockchain-Sim/blob/main/screenshots/55/2.PNG?raw=true)
  
 - attacker has 60 percent of the network compute capacity
-![60 percent](https://github.com/KareimGazer/malware-detector/blob/main/screenshots/60/.PNG?raw=true)
+![60 percent](https://github.com/KareimGazer/malware-detector/blob/main/screenshots/60/1.PNG?raw=true)
 
 Hence, we estimate that the attacker need at least 50 percent of the network compute capacity to forge a branch.
 
